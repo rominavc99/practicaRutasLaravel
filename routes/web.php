@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('notas', function () {
+    return view('notas');
+});
+
+Route::get('notas/agregar', function () {
+    return view('agregar');
+});
+
 Route::get('notas/{id}/detalles', function ($id) {
     return 'Aqui se muestran los detalles de la nota: ' .$id;
 });
