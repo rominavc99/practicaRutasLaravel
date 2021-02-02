@@ -18,7 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('notas', function () {
-    return view('notas');
+
+    $notas = [
+
+    ];
+
+    return view('notas', ['notas' => $notas]);
 });
 
 Route::get('notas/agregar', function () {
