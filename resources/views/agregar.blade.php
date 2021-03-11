@@ -7,7 +7,8 @@
                     <div class="card-body">
                         <h1>Nueva nota</h1>
 
-                        <form action="">
+                        <form method="POST" action="{{ url('crear') }}">
+                        @csrf
                             <label for="title" class="field-label">Título: </label>
                             <input type="text" name="title" id="title" class="field-input">
 
